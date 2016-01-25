@@ -1,5 +1,5 @@
 # generator-fastlp [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Fast generation design Landing Page on Twitter Bootstrap
+> Fast generation of landing pages
 
 ## Installation
 
