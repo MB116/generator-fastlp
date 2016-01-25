@@ -1,0 +1,13 @@
+header {
+
+}
+
+<% for(var i=1; i<=appScrolls; i++) { %>
+#scroll-<%= i %> {
+	
+}
+<% } %>
+
+footer {
+
+}

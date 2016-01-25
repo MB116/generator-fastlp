@@ -1,0 +1,11 @@
+{
+  "name": "gulp",
+  "description": "The streaming build system",
+  "version": "3.8.10",
+  "homepage": "http://gulpjs.com",
+  "main": "gulpfile.js",
+  "author": "Pavel MB116 Andreichenko",
+  "devDependencies": {
+    
+  }
+}

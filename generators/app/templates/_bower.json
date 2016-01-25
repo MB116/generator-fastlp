@@ -1,0 +1,8 @@
+{
+  "name": "<%= appName %>",
+  "private": true,
+  "dependencies": {
+    
+  },
+  "devDependencies": {}
+}
