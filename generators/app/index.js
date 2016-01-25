@@ -56,25 +56,30 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   app: function () {
-    this.mkdir('app');
-    this.mkdir('app/css');
+    this.mkdir('src');
     if(this.appCSSPreprocessor == "CSS") {
-      this.template('_css/_style.css', 'app/css/style.css');
+      this.mkdir('src/css');
+      this.template('_css/_styles.css', 'src/css/styles.css');
     } else {
-      this.mkdir('app/scss');
-      this.copy('_scss/_header.scss', 'app/scss/header.scss');
-      this.copy('_scss/_footer.scss', 'app/scss/footer.scss');
+      this.mkdir('src/scss');
+      this.copy('_scss/_header.scss', 'src/scss/header.scss');
+      this.copy('_scss/_footer.scss', 'src/scss/footer.scss');
       for(var i=1; i<=this.appScrolls; i++) {
-        this.copy('_scss/_scroll-.scss', 'app/scss/scroll-'+i+'.scss');
+        this.copy('_scss/_scroll-.scss', 'src/scss/scroll-'+i+'.scss');
       }
     }
-    this.mkdir('app/img');
-    this.mkdir('app/js');
+    this.mkdir('src/js');
+    this.template('_js/_scripts.js', 'src/js/scripts.js');
 
-    this.template('_index.html', 'app/index.html');    
-    this.template('_js/_scripts.js', 'app/js/scripts.js');
+    this.mkdir('build');
+    this.mkdir('build/css');
+    this.mkdir('build/js');
+    this.mkdir('build/img');
+    this.template('_index.html', 'build/index.html');
+
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
+    this.copy('_gulpfile.js', 'gulpfile.js');
   },
 
   writing: function () {
