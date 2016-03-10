@@ -62,6 +62,7 @@ module.exports = yeoman.generators.Base.extend({
       this.template('_css/_styles.css', 'src/css/styles.css');
     } else {
       this.mkdir('src/scss');
+      this.copy('_scss/_main.scss', 'src/scss/main.scss');
       this.copy('_scss/_header.scss', 'src/scss/header.scss');
       this.copy('_scss/_footer.scss', 'src/scss/footer.scss');
       for(var i=1; i<=this.appScrolls; i++) {

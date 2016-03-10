@@ -5,11 +5,11 @@
   "homepage": "http://gulpjs.com",
   "main": "gulpfile.js",
   "author": "Pavel MB116 Andreichenko",
-  "devDependencies": {
+  "dependencies": {
     "browser-sync": "^2.4.0",
     "browserify": "^6.3.2",
     "critical": "^0.5.6",
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.0",
     "gulp-autoprefixer": "^0.0.8",
     "gulp-concat": "^2.3.4",
     "gulp-connect-php": "0.0.5",
