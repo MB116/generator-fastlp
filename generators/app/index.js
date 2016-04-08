@@ -26,7 +26,7 @@ module.exports = yeoman.generators.Base.extend({
           if(number >= "1" && number <= "10") {
             return true;
           } else {
-            return "You need to provide a number (1-10)";            
+            return "You need to provide a number (1-10)";
           }
         }
     },
@@ -76,6 +76,7 @@ module.exports = yeoman.generators.Base.extend({
     this.mkdir('build/css');
     this.mkdir('build/js');
     this.mkdir('build/img');
+    this.mkdir('build/fonts');
     this.template('_index.html', 'build/index.html');
 
     this.copy('_package.json', 'package.json');
