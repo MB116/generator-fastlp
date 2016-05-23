@@ -79,6 +79,7 @@ module.exports = yeoman.generators.Base.extend({
     this.mkdir('build/fonts');
     this.template('_index.html', 'build/index.html');
 
+    this.copy('_thanks.html', 'build/thanks.html');
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
     this.copy('_gulpfile.js', 'gulpfile.js');

@@ -21,7 +21,7 @@ var reload      = browserSync.reload;
 /************************************************
  PATH VARIABLES
  ************************************************/
-var phpSrc       = './build/**/*.php';
+var markupSrc       = './build/**/*.html';
 var phpIni       = 'C:/MAMP/bin/php/php5.6.8/php.exe';
 var phpExe       = 'C:/MAMP/conf/php5.6.8/php.ini';
 
@@ -46,8 +46,7 @@ gulp.task('styles', function() {
         .pipe(minifycss())
         .pipe(concat('styles.min.css'))
         .pipe(gulp.dest(stylesDest))
-        .pipe(reload({stream: true}))
-        .pipe(notify('Styles compiled!'));
+        .pipe(reload({stream: true}));
 });
 
 /************************************************
@@ -82,7 +81,7 @@ gulp.task('server', function() {
 
         //Watch
         gulp.watch(stylesSrc, ['styles']);
-        gulp.watch(phpSrc).on('change', reload);
+        gulp.watch(markupSrc).on('change', reload);
         gulp.watch(scriptsWatch, ['js-watch']);
     });
 });
