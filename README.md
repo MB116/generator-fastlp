@@ -1,4 +1,4 @@
-# generator-fastlp [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-fastlp [![NPM version][npm-image]][npm-url]
 > Fast generation of landing pages
 
 ## Installation
@@ -22,7 +22,7 @@ Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he
 
 ## License
 
-Apache-2.0 © [Pavel MB116 Andreichenko]()
+WTFPL © [Pavel MB116 Andreichenko]()
 
 
 [npm-image]: https://badge.fury.io/js/generator-fastlp.svg
