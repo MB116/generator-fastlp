@@ -23,10 +23,10 @@ module.exports = yeoman.generators.Base.extend({
         message: 'Enter the number of scrolls in the project:',
         validate: function (input) {
           var number = parseInt(input);
-          if(number >= "1" && number <= "10") {
+          if(number >= "1" && number <= "15") {
             return true;
           } else {
-            return "You need to provide a number (1-10)";
+            return "You need to provide a number (1-15)";
           }
         }
     },
@@ -35,12 +35,12 @@ module.exports = yeoman.generators.Base.extend({
       name: 'appCSSPreprocessor',
       message: 'Select CSS preprocessor:',
       choices: [{
-        name: 'Without a preprocessor (CSS)',
-        name: 'CSS'
-      },
-      {
         name: 'SCSS',
         value: 'SCSS'
+      },
+      {
+        name: 'Without a preprocessor (CSS)',
+        name: 'CSS'
       }],
       default: 0
     }];
@@ -96,7 +96,7 @@ module.exports = yeoman.generators.Base.extend({
     this.installDependencies();
 
     this.log(yosay(
-      'Thank you for using ' + chalk.red('FastLP') + ' generator! \n Created by \n Pavel MB116 Andreichenko'
+      'Do not forget change path to php \n Thank you for using ' + chalk.red('FastLP') + ' generator! \n Created by \n Pavel MB116 Andreichenko'
     ));
   }
 });
