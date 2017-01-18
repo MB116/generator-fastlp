@@ -95,8 +95,9 @@ module.exports = yeoman.generators.Base.extend({
   install: function () {
     this.installDependencies();
 
+    this.log('Do not forget change path to php.');
     this.log(yosay(
-      'Do not forget change path to php \n Thank you for using ' + chalk.red('FastLP') + ' generator! \n Created by \n Pavel MB116 Andreichenko'
+      'Thank you for using ' + chalk.red('FastLP') + ' generator! \n Created by \n Pavel MB116 Andreichenko'
     ));
   }
 });
