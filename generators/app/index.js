@@ -20,7 +20,7 @@ module.exports = yeoman.generators.Base.extend({
     {
         type: 'input',
         name: 'appScrolls',
-        message: 'Enter the number of scrolls in the project:',
+        message: 'Enter the number of sections in the project:',
         validate: function (input) {
           var number = parseInt(input);
           if(number >= "1" && number <= "15") {
@@ -63,10 +63,17 @@ module.exports = yeoman.generators.Base.extend({
     } else {
       this.mkdir('src/scss');
       this.copy('_scss/_main.scss', 'src/scss/main.scss');
-      this.copy('_scss/_header.scss', 'src/scss/header.scss');
-      this.copy('_scss/_footer.scss', 'src/scss/footer.scss');
+
+      this.copy('_scss/_abstracts/_variables.scss', 'src/scss/abstracts/variables.scss');
+      this.copy('_scss/_abstracts/_variables.scss', 'src/scss/abstracts/variables.scss');
+
+      this.copy('_scss/_components/_buttons.scss', 'src/scss/components/buttons.scss');
+
+      this.copy('_scss/_layouts/_header.scss', 'src/scss/layouts/header.scss');
+      this.copy('_scss/_layouts/_footer.scss', 'src/scss/layouts/footer.scss');
+
       for(var i=1; i<=this.appScrolls; i++) {
-        this.copy('_scss/_scroll-.scss', 'src/scss/scroll-'+i+'.scss');
+        this.copy('_scss/_sections/_section-.scss', 'src/scss/sections/section-'+i+'.scss');
       }
     }
     this.mkdir('src/js');

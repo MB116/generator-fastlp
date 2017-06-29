@@ -22,10 +22,10 @@ var reload      = browserSync.reload;
  PATH VARIABLES
  ************************************************/
 var markupSrc       = './build/**/*.html';
-var phpIni       = 'C:/MAMP/bin/php/php5.6.8/php.exe';
-var phpExe       = 'C:/MAMP/conf/php5.6.8/php.ini';
+var phpIni       = 'C:/Amppas/php-5.6/php.exe';
+var phpExe       = 'C:/Ampps/php-5.6/php.ini';
 
-var stylesSrc    = './src/scss/**/*.scss';
+var stylesSrc    = './src/scss/main.scss';
 var stylesDest   = './build/css';
 
 var scriptsSrc   = './src/js/scripts';

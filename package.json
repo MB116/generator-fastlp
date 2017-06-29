@@ -1,11 +1,11 @@
 {
   "name": "generator-fastlp",
-  "version": "0.1.3",
-  "description": "Fast landing page generator",
+  "version": "0.1.4",
+  "description": "Fast landing page project generator",
   "homepage": "https://github.com/MB116/generator-fastlp",
   "author": {
     "name": "Pavel MB116 Andreichenko",
-    "email": "don-pakito@yandex.ru",
+    "email": "pashtet.mb116@gmail.com",
     "url": ""
   },
   "files": [
@@ -13,8 +13,7 @@
   ],
   "main": "generators\\index.js",
   "keywords": [
-    "yeoman-generator",
-    "Twitter Bootstrap"
+    "yeoman-generator"
   ],
   "dependencies": {
     "yeoman-generator": "^0.21.1",
@@ -44,5 +43,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "Apache-2.0"
+  "license": "WTFPL"
 }
