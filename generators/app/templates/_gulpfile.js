@@ -22,10 +22,10 @@ var reload      = browserSync.reload;
  PATH VARIABLES
  ************************************************/
 var markupSrc       = './build/**/*.html';
-var phpIni       = 'C:/Amppas/php-5.6/php.exe';
+var phpIni       = 'C:/Ampps/php-5.6/php.exe';
 var phpExe       = 'C:/Ampps/php-5.6/php.ini';
 
-var stylesSrc    = './src/scss/main.scss';
+var stylesSrc    = './src/scss/**/*.scss';
 var stylesDest   = './build/css';
 
 var scriptsSrc   = './src/js/scripts';
@@ -36,7 +36,7 @@ var scriptsWatch = './src/js/**/*.js';
  SCSS(libsass) & CSS
  ************************************************/
 gulp.task('styles', function() {
-    gulp.src(stylesSrc)
+    gulp.src('./src/scss/main.scss')
         .pipe(sass({
             errLogToConsole: true,
             sourceComments: 'map',
